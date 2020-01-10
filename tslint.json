@@ -1,0 +1,28 @@
+{
+    "extends": ["tslint:recommended", "tslint-config-prettier"],
+    "rules": {
+        "semicolon": true,
+        "eofline": false,
+        "no-console": false,
+        "object-literal-sort-keys": false,
+        "indent": [true, "spaces", 4],
+        "interface-name": [false],
+        "no-empty-interface": false,
+        "jsdoc-format": false,
+        "no-redundant-jsdoc": false,
+        "no-unused-expression": [true, "allow-fast-null-checks"],
+        "class-name": false,
+        "prefer-const": false,
+        "variable-name": [
+            true,
+            "allow-leading-underscore",
+            "allow-snake-case",
+            "ban-keywords"
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "**/node_modules/**"
+        ]
+    }
+}

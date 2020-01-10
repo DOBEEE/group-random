@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "declaration": false,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "jsx": "preserve",
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": false,
+        "target": "esnext",
+        "noLib": false,
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "typeRoots": ["./node_modules/@types"],
+        "types": [
+            "react-redux",
+            "node",
+            "jquery"
+            // "webpack-env"
+        ],
+        "paths": {
+            "@common/*": ["./app/common/*"],
+        },
+    },
+    "lib": ["dom", "es2015", "es2016", "es2017.object", "es2017", "es2018", "esnext"],
+    "exclude": ["node_modules"],
+    "include": ["./"]
+}

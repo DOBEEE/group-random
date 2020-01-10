@@ -1,0 +1,44 @@
+.sort-card {
+    .content {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        align-content: center;
+        margin: 0 auto;
+
+        .item-card {
+            padding: 10px 0px;
+            width: 80px;
+            font-size: 16px;
+            color: #303030;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 21px;
+            background: #eee;
+            position: relative;
+        }
+
+        .item-card:first-child {
+            &::after {
+                content: '组长';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: #303030;
+                color: #fff;
+                font-size: 10px;
+                transform: scale(0.8);
+            }
+        }
+    }
+
+    .oparetion {
+        margin-top: 50px;
+        text-align: center;
+
+        button {
+            margin: 0 auto;
+        }
+    }
+}
